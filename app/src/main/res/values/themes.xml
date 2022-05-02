@@ -3,5 +3,6 @@
 
     <style name="Theme.JetpackJourney" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/LightBlue</item>
+        <item name="android:windowBackground">@color/white</item>
     </style>
 </resources>
