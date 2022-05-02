@@ -6,7 +6,6 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -28,9 +27,10 @@ fun Details(navController: NavHostController) {
         contentAlignment = Alignment.Center
     )
     {
+    Column(horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center){
+
         Column(verticalArrangement = Arrangement.Center)
-            //horizontalAlignment = Alignment.CenterHorizontally
-               //verticalArrangement = Arrangement.Center)
         {
             Row() {
                 Image(
@@ -41,6 +41,32 @@ fun Details(navController: NavHostController) {
 
                 Text(
                     text = " Chante Lee Davids ",
+                    fontSize = 25.sp,
+                    modifier = Modifier.padding(start = 10.dp)
+                )
+            }
+            Row() {
+                Image(
+                    painter = painterResource(id = R.drawable.ic_baseline_laptop_chromebook_24),
+                    contentDescription = null,
+                    modifier = Modifier.size(35.dp)
+                )
+
+                Text(
+                    text = " Applications Development ",
+                    fontSize = 25.sp,
+                    modifier = Modifier.padding(start = 10.dp)
+                )
+            }
+            Row() {
+                Image(
+                    painter = painterResource(id = R.drawable.ic_baseline_laptop_chromebook_24),
+                    contentDescription = null,
+                    modifier = Modifier.size(35.dp)
+                )
+
+                Text(
+                    text = " Informatics & Design ",
                     fontSize = 25.sp,
                     modifier = Modifier.padding(start = 10.dp)
                 )
@@ -58,36 +84,10 @@ fun Details(navController: NavHostController) {
                     modifier = Modifier.padding(start = 10.dp)
                 )
             }
-            Row() {
-                Image(
-                    painter = painterResource(id = R.drawable.ic_baseline_person_24),
-                    contentDescription = null,
-                    modifier = Modifier.size(35.dp)
-                )
 
-                Text(
-                    text = " Applications Development ",
-                    fontSize = 25.sp,
-                    modifier = Modifier.padding(start = 10.dp)
-                )
             }
-            Row() {
-                Image(
-                    painter = painterResource(id = R.drawable.ic_baseline_person_24),
-                    contentDescription = null,
-                    modifier = Modifier.size(35.dp)
-                )
-
-                Text(
-                    text = " Informatics & Design ",
-                    fontSize = 25.sp,
-                    modifier = Modifier.padding(start = 10.dp)
-                )
-            }
-//            Spacer(modifier = Modifier.size(30.dp)) //
-//            }
-//            Column(horizontalAlignment = Alignment.CenterHorizontally,
-//            verticalArrangement = Arrangement.Center){
+            Column(horizontalAlignment = Alignment.CenterHorizontally
+            ){
 
                 Button(
                     modifier = Modifier.padding(20.dp),
@@ -110,7 +110,7 @@ fun Details(navController: NavHostController) {
 
                     Image(painter = painterResource(id = R.drawable.ic_baseline_library_books_24),
                         contentDescription = null,
-                        modifier = Modifier.size(25.dp)
+                        modifier = Modifier.size(35.dp)
                     )
                 }
 
@@ -135,11 +135,11 @@ fun Details(navController: NavHostController) {
 
                     Image(painter = painterResource(id = R.drawable.ic_baseline_keyboard_arrow_left_24),
                         contentDescription = null,
-                        modifier = Modifier.size(25.dp)
+                        modifier = Modifier.size(35.dp)
                     )
                 }
 
             }
-        //}// column
+        }
     }
 }

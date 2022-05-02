@@ -43,7 +43,6 @@ fun Home(navController: NavHostController) {
             fontSize = 20.sp,
         )
         ContentView()
-        //Spacer(modifier = Modifier.size(30.dp))
 
             Button(
                 modifier = Modifier.padding(20.dp),
