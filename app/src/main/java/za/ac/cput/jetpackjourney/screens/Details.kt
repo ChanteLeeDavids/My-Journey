@@ -1,3 +1,6 @@
+//Author : Chante Lee Davids
+//Student No. : 220246688
+
 package za.ac.cput.jetpackjourney.screens
 
 import androidx.compose.foundation.BorderStroke
@@ -66,7 +69,7 @@ fun Details(navController: NavHostController) {
                 )
 
                 Text(
-                    text = " Informatics & Design ",
+                    text = " Information Technology ",
                     fontSize = 25.sp,
                     modifier = Modifier.padding(start = 10.dp)
                 )
@@ -96,6 +99,7 @@ fun Details(navController: NavHostController) {
                     contentPadding = PaddingValues(20.dp,12.dp),
                     border = BorderStroke(2.dp, Color.Blue),
                     onClick = {
+                        navController.navigate(NavRoutes.Courses.route)
 
                     },
                     colors = ButtonDefaults.buttonColors(
