@@ -1,3 +1,6 @@
+//Author : Chante Lee Davids
+//Student No. : 220246688
+
 package za.ac.cput.jetpackjourney
 
 import android.os.Bundle
@@ -19,6 +22,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import za.ac.cput.jetpackjourney.screens.Home
 import za.ac.cput.jetpackjourney.screens.Details
+import za.ac.cput.jetpackjourney.screens.Courses
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,6 +48,10 @@ fun MainScreen() {
 
         composable(NavRoutes.Details.route) {
             Details(navController = navController)
+        }
+
+        composable(NavRoutes.Courses.route) {
+            Courses(navController = navController)
         }
 
     }
